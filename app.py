@@ -76,5 +76,29 @@ Model dilatih menggunakan data berita dan pesan yang telah dilabeli serta dipros
 **Mitra:** Karang Taruna Kecamatan Kerinci Kanan
 """)
 
+
+# ========== FORM PELAPORAN HOAX ==========
+
+st.markdown("---")
+st.markdown("#### 📨 Laporkan Berita Hoax Baru")
+
+st.markdown("Jika Anda menemukan berita hoax baru yang belum dikenali oleh sistem kami, mohon bantu kami untuk memperbarui database dengan mengisi form berikut:")
+
+with st.form("form_laporan_hoax"):
+    laporan_text = st.text_area("📝 Deskripsikan isi pesan atau berita hoax yang Anda temui:", height=150)
+    pelapor_nama = st.text_input("👤 Nama Anda (opsional)")
+    pelapor_email = st.text_input("📧 Alamat Email (opsional)")
+    submitted = st.form_submit_button("Kirim Laporan")
+
+    if submitted:
+        if laporan_text.strip() == "":
+            st.warning("Silakan isi deskripsi hoax sebelum mengirim laporan.")
+        else:
+            st.success("✅ Laporan Anda telah diterima. Terima kasih atas kontribusinya!")
+            st.info("📌 *Catatan: Ini adalah form dummy. Data tidak disimpan.*")
+
+
+
+
 st.markdown("<hr style='border: 1px solid lightgray;'>", unsafe_allow_html=True)
 st.markdown("<center><small>© 2025 Deteksi Hoax ML - Tim Dosen Universitas Hang Tuah Pekanbaru</small></center>", unsafe_allow_html=True)
