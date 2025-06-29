@@ -73,8 +73,8 @@ Model dilatih menggunakan data berita dan pesan yang telah dilabeli serta dipros
 - Cocok untuk edukasi dan verifikasi cepat berita
 
 **Developer:** Universitas Hang Tuah Pekanbaru  
-**Mitra:** Kemendikbudristek 2025
+**Mitra:** Karang Taruna Kecamatan Kerinci Kanan
 """)
 
 st.markdown("<hr style='border: 1px solid lightgray;'>", unsafe_allow_html=True)
-st.markdown("<center><small>© 2025 Deteksi Hoax ML - UHTP x Kemendikbudristek</small></center>", unsafe_allow_html=True)
+st.markdown("<center><small>© 2025 Deteksi Hoax ML - Tim Dosen Universitas Hang Tuah Pekanbaru</small></center>", unsafe_allow_html=True)
