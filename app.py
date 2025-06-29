@@ -60,22 +60,6 @@ with st.container():
             else:
                 st.success(f"✅ Prediksi: **VALID / BUKAN HOAX**  \n🟢 Probabilitas: {prob:.2f}")
 
-# ========== KONTEN TAMBAHAN ==========
-st.markdown("---")
-st.markdown("#### ℹ️ Tentang Aplikasi")
-st.markdown("""
-Aplikasi ini dibangun untuk mendeteksi kemungkinan berita hoax atau valid berdasarkan input teks menggunakan algoritma *Machine Learning Logistic Regression*. 
-Model dilatih menggunakan data berita dan pesan yang telah dilabeli serta diproses menggunakan teknik pembersihan teks dan vektorisasi TF-IDF.
-
-**Fitur:**
-- Model ringan dan cepat
-- Tidak membutuhkan GPU
-- Cocok untuk edukasi dan verifikasi cepat berita
-
-**Developer:** Universitas Hang Tuah Pekanbaru  
-**Mitra:** Karang Taruna Kecamatan Kerinci Kanan
-""")
-
 
 # ========== FORM PELAPORAN HOAX ==========
 
@@ -96,6 +80,25 @@ with st.form("form_laporan_hoax"):
         else:
             st.success("✅ Laporan Anda telah diterima. Terima kasih atas kontribusinya!")
             st.info("📌 *Mari sama-sama kita berantas informasi hoax*")
+
+# ========== KONTEN TAMBAHAN ==========
+st.markdown("---")
+st.markdown("#### ℹ️ Tentang Aplikasi")
+st.markdown("""
+Aplikasi ini dibangun untuk mendeteksi kemungkinan berita hoax atau valid berdasarkan input teks menggunakan algoritma *Machine Learning Logistic Regression*. 
+Model dilatih menggunakan data berita dan pesan yang telah dilabeli serta diproses menggunakan teknik pembersihan teks dan vektorisasi TF-IDF.
+
+**Fitur:**
+- Model ringan dan cepat
+- Tidak membutuhkan GPU
+- Cocok untuk edukasi dan verifikasi cepat berita
+
+**Developer:** Universitas Hang Tuah Pekanbaru  
+**Mitra:** Karang Taruna Kecamatan Kerinci Kanan
+""")
+
+
+
 
 
 
