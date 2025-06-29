@@ -95,7 +95,7 @@ with st.form("form_laporan_hoax"):
             st.warning("Silakan isi deskripsi hoax sebelum mengirim laporan.")
         else:
             st.success("✅ Laporan Anda telah diterima. Terima kasih atas kontribusinya!")
-            st.info("📌 *Catatan: Ini adalah form dummy. Data tidak disimpan.*")
+            st.info("📌 *Mari sama-sama kita berantas informasi hoax*")
 
 
 
