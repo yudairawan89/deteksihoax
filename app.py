@@ -13,15 +13,17 @@ model = joblib.load("logreg_hoax_model.pkl")
 vectorizer = joblib.load("tfidf_vectorizer.pkl")
 
 # Logo
-col1, col2, col3 = st.columns([1, 6, 1])
+col1, col1b, col2, col3 = st.columns([1, 1, 6, 1])
 with col1:
     st.image("kemendikbud.png", width=100)
+with col1b:
+    st.image("Logo2.png", width=100)
 with col2:
     st.markdown("<h1 style='text-align: center; color: navy;'>Verifia.ID</h1>", unsafe_allow_html=True)
     st.markdown("<h5 style='text-align: center; color: gray;'>Deteksi Berita Hoax Menggunakan Machine Learning Logistic Regression</h5>", unsafe_allow_html=True)
 with col3:
     st.image("uhtp.png", width=100)
-
+    
 st.markdown("<hr style='border: 2px solid #0d6efd;'>", unsafe_allow_html=True)
 
 # ========== FUNGSI CLEANING ==========
